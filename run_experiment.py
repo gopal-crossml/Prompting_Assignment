@@ -1,12 +1,20 @@
 from client import get_client
-from model_config import MODEL_NAME, GENERATION_CONFIG
-from dotenv import load_dotenv
-import os
-load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
-def run_experiment(prompts):
-    client = get_client(api_key)
+from constant import MODEL_NAME, GENERATION_CONFIG
+from client import client
 
+# This function returns the text from the client model
+def run_experiment(prompts):
+    '''
+     Generate model output for the given prompts using the configured Gemini model.
+
+    Args:
+        prompts: Prompt or the contents send to the model.
+
+    Returns:
+        str: Generated text response from the model.
+    '''
+
+# Creating response with the help of client model,content and config
     response = client.models.generate_content(
         model=MODEL_NAME,
         contents=prompts,
