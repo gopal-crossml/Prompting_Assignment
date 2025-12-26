@@ -177,22 +177,3 @@ Response Guidelines:
 Assume the reader understands basic car terms but is not an engineer
 
 '''
-
-User_prompt = '''
-Task for QA Engineer
-    Verify that the username and password fields accept input.
-
-    Check that the Login button is clickable.
-
-    Test login with:
-
-    Valid username and valid password
-
-    Valid username and invalid password
-
-    Empty username and password
-
-    Verify that an error message is displayed for invalid credentials.
-
-
-'''
