@@ -1,4 +1,5 @@
 from google import genai
+
 from cred import gemini_api_key
 
 # Function for creating client

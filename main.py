@@ -1,9 +1,9 @@
-from prompt import ALL_PROMPTS
+from prompt import *
 from run_experiment import run_experiment
 
 # The main function runs the whole program
 def main():
-    output = run_experiment(ALL_PROMPTS)
+    output = run_experiment(prompt4)
     print("\n=== MODEL OUTPUT ===\n")
     print(output)
     
