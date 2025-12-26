@@ -1,6 +1,6 @@
-from client import get_client
-from constant import MODEL_NAME, GENERATION_CONFIG
 from client import client
+from constant import MODEL_NAME, GENERATION_CONFIG
+
 
 # This function returns the text from the client model
 def run_experiment(prompts):
