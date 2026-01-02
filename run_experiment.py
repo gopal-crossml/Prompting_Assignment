@@ -16,7 +16,7 @@ def run_experiment(prompts : str|None):
 # Creating response with the help of client model,content and config
     response = client.models.generate_content(
         model=MODEL_NAME,
-        contents=[image, prompts],
+        contents=[prompts],
         config=GENERATION_CONFIG
     )
 
